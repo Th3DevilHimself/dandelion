@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background: url(../img/Banner.png);
+  width: auto;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* barra de navegação */
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar #lmbtn {
+  padding: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  float: left;
+}
+
+#navbar #nbtm {
+  padding: 15px 16px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar #nbtm:hover, #lmbtn:hover {
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+
+#navbar #nbtm.right {
+  float: right;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
+/*
+area de destaques
+*/
+
+.dstq {
+  background-color: rgb(65, 65, 65);
+  width: auto max-content;
+  height: 400px;
+}
+
+.dstq aside {
+  float: right;
+  height: 400px;
+  width: 49%;
+}
+
+.pdstq h4 {
+  color: gold;
+  font-size: 50px;
+  padding-left: 30%;
+  padding-top: 40px;
+}
+
+.pdstq p {
+  color: white;
+  font-size: 20px;
+  margin: 60px;
+}
+
+/*carrossel*/
+
+.slideshowpad {
+  padding: 20px;
+  height: 400px;
+}
+
+.slideshow-container {
+  z-index: 1;
+  max-width: 650px;
+  float: left;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+/* quem somos nos */
+
+.qsn {
+  height: 600px;
+}
