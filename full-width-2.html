@@ -37,7 +37,6 @@
                 </ul>
             </div>
     </nav>
-
     <!-- Page Content -->
     <div class="container ">
 
@@ -103,32 +102,38 @@
                 </head>
 
                 <body>
-                    <form method="post" action="cadastro_usuario.php">
+                    <form method="post" action="cadastro_psicologo.php">
                         <div class="container">
                             <center>
                                 <h1> Cadastro </h1>
                             </center>
                             <hr>
+                            <label> Você é? *</label> <br>
+                            <label> Psicólogo Voluntário </label>
+                            <input type="radio" id="psicologo_voluntario" name="Psicólogo Voluntário" value="psicologo_voluntario" required>
+                            <label>  Psicólogo Jurídico </label>
+                            <input type="radio" id="psicologo_voluntario" name="Psicólogo Voluntário" value="psicologo_voluntario" required> <br><br>
                             <label> Nome * </label>
                             <input type="text" name="nome" placeholder="Escreva seu nome aqui." size="15" required />
                             <label> Sobrenome * </label>
                             <input type="text" name="sobrenome" placeholder="Escreva seu sobrenome aqui." size="40" required />
-                            <label> CPF * </label>
-                            <input type="text" name="CPF" placeholder="Digite seu CPF aqui (sem pontuação)" size="11" required>
+                            <label> CFP </label>
+                            <input type="text" name="CFP" placeholder="Digite seu CFP aqui" size="15">
+                            <label> CPF ou CNPJ *</label>
+                            <input type="text" name="CPFouCNPJ" placeholder="Digite seu CPF ou CNPJ aqui (sem pontuação)" size="15" required>
                             </input>
+                            <label> Formação (Se você ainda está cursando e quer ser um psicólogo voluntário.) </label>
+                            <input type="text" name="formacao" placeholder="Digite sua faculdade aqui e o semestre que você está.">
+                            <p>Exemplo: USP - 6° semestre
+                            </p>
+                            </input> <br>
                             <div>
-                                <label>Telefone</label>
-                                <input type="text" name="ntelefone" placeholder="Digite seu telefone aqui." size="10" />
-                                <label>   
-                                    Celular *
-                                    </label>
-                                <input type="text" name="ncelular1" placeholder="Digite seu número de celular aqui." size="10" required />
-                                <label>   
-                                    Celular 2
-                                    </label>
-                                <input type="text" name="ncelular2" placeholder="Digite um número para recados." size="10" />
+                                <label> Telefone </label>
+                                <input type="text" name="telefone" placeholder="Digite seu telefone aqui." size="10" />
+                                <label> Celular *</label>
+                                <input type="text" name="celular1" placeholder="Digite seu nome de celular aqui" size="10" required/>
                                 <label for="email"><b>E-mail *</b></label>
-                                <input type="text" name="email" placeholder="Digite seu E-mail." required>
+                                <input type="text" name="email" placeholder="Digite seu E-mail" name="email" required>
 
                                 <button type="submit" class="registerbtn">Cadastre-se</button>
                     </form>
